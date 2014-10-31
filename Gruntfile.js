@@ -3,18 +3,21 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-
+    //Setting up slim 
     slim: {
-    dist: {
-      files: [{
-        expand: true,
-        cwd: 'slim',
-        src: ['{,*/}*.slim'],
-        dest: 'www',
-        ext: '.html'
-      }]
-    }
-  },
+      dist: {
+        options: {                       // Target options
+        pretty: true
+      },
+        files: [{
+          expand: true,
+          cwd: 'slim',
+          src: ['{,*/}*.slim'],
+          dest: 'www',
+          ext: '.html'
+        }]
+      }
+    },
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
@@ -69,6 +72,7 @@ module.exports = function(grunt) {
       files: ['test/**/*.html']
     },
     watch: {
+      //Watching all the .slim files in the project
       slimfiles: {
       files: '{,*/}*.slim',
       tasks:['slim']

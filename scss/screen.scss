@@ -4,8 +4,10 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
 $icons-sprite-dimensions: true;
 @import "icons/*.png";
 @include all-icons-sprites;
+
 body {background:tomato;}
 .icons {display:inline-block;}

@@ -2,7 +2,8 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700,300,900|Open+Sans:400,700,800,300);
+/* line 5, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -73,33 +74,393 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-repeat: no-repeat;
 }
 
-/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-accept {
   background-position: 0 0;
   height: 16px;
   width: 16px;
 }
 
-/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-close {
   background-position: 0 -16px;
   height: 16px;
   width: 16px;
 }
 
-/* line 84, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-plus {
   background-position: 0 -32px;
   height: 16px;
   width: 16px;
 }
 
-/* line 12, ../../scss/screen.scss */
-body {
-  background: tomato;
+/* line 3, ../../scss/base.scss */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
-/* line 13, ../../scss/screen.scss */
+/* line 7, ../../scss/base.scss */
+body {
+  background: #323a45;
+  font-family: "Open Sans", sans-serif;
+}
+/* line 11, ../../scss/base.scss */
+body .topbar {
+  height: 3px;
+  width: 100%;
+  background: #14171b;
+}
+/* line 17, ../../scss/base.scss */
+body .site_wrapper {
+  width: 960px;
+  height: auto;
+  min-height: 500px;
+  margin: 80px auto 0px;
+}
+
+/* line 26, ../../scss/base.scss */
+.main_title h1 {
+  text-align: center;
+  color: #f4ce77;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 2px black;
+  margin-bottom: 25px;
+}
+/* line 37, ../../scss/base.scss */
+.main_title p {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  text-shadow: 1px 2px 2px black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+/* line 46, ../../scss/base.scss */
+.main_title .download {
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 49, ../../scss/base.scss */
+.main_title .download .btn {
+  text-transform: uppercase;
+  color: #14171b;
+  font-size: 14px;
+  padding: 15px 44px;
+  background: #e7c370;
+  text-decoration: none;
+  -moz-border-radius: 3px / 3px;
+  -webkit-border-radius: 3px 3px;
+  border-radius: 3px / 3px;
+  -moz-box-shadow: 0px 5px 0px 0px #72623f;
+  -webkit-box-shadow: 0px 5px 0px 0px #72623f;
+  box-shadow: 0px 5px 0px 0px #72623f;
+  margin: auto;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+/* line 62, ../../scss/base.scss */
+.main_title .download .desc {
+  color: #e7c370;
+  font-size: 12px;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+/* line 71, ../../scss/base.scss */
+.sep {
+  height: 1px;
+  width: 100%;
+  background: #14171b;
+  margin: 40px auto;
+}
+
+/* line 78, ../../scss/base.scss */
 .icons {
   display: inline-block;
+}
+
+/* line 80, ../../scss/base.scss */
+.cf {
+  clear: both;
+}
+
+/* line 4, ../../scss/hovers.scss */
+.hover_wrapper h2 {
+  text-align: center;
+  color: #f4ce77;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 2px black;
+  margin-bottom: 25px;
+}
+
+/* line 27, ../../scss/hovers.scss */
+.hover1 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  margin-bottom: 30px;
+  width: 465px;
+  height: 275px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 36, ../../scss/hovers.scss */
+.hover1:nth-of-type(even) {
+  margin-left: 30px;
+}
+/* line 40, ../../scss/hovers.scss */
+.hover1 img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  position: relative;
+}
+/* line 47, ../../scss/hovers.scss */
+.hover1 .tooltip {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  background: url(../img/upfeathers.png) repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+/* line 58, ../../scss/hovers.scss */
+.hover1 .tooltip h1 {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+}
+/* line 70, ../../scss/hovers.scss */
+.hover1 .tooltip .hover_desc {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+/* line 76, ../../scss/hovers.scss */
+.hover1 .tooltip p {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  color: #000;
+  text-shadow: 1px 2px 2px white;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 86, ../../scss/hovers.scss */
+.hover1 .tooltip .readmore {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+/* line 92, ../../scss/hovers.scss */
+.hover1 .tooltip .readmore a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 44px;
+  background: #000;
+  text-decoration: none;
+  -moz-border-radius: 3px / 3px;
+  -webkit-border-radius: 3px 3px;
+  border-radius: 3px / 3px;
+  margin: auto;
+  display: inline-block;
+}
+/* line 107, ../../scss/hovers.scss */
+.hover1:hover .tooltip {
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+/* line 111, ../../scss/hovers.scss */
+.hover1:hover img {
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+/* line 117, ../../scss/hovers.scss */
+.hover1.reverse .tooltip {
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+/* line 126, ../../scss/hovers.scss */
+.hover1.reverse:hover img {
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+/* line 130, ../../scss/hovers.scss */
+.hover1.reverse:hover .tooltip {
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 139, ../../scss/hovers.scss */
+.hover2 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  float: left;
+  margin-bottom: 30px;
+  width: 465px;
+  height: 275px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 148, ../../scss/hovers.scss */
+.hover2:nth-of-type(odd) {
+  margin-left: 30px;
+}
+/* line 152, ../../scss/hovers.scss */
+.hover2 img {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 158, ../../scss/hovers.scss */
+.hover2:hover img {
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+/* line 162, ../../scss/hovers.scss */
+.hover2:hover .tooltip {
+  opacity: 1;
+}
+/* line 165, ../../scss/hovers.scss */
+.hover2:hover .tooltip h1 {
+  top: 20px;
+}
+/* line 169, ../../scss/hovers.scss */
+.hover2:hover .tooltip .hover_desc {
+  bottom: 0%;
+}
+/* line 177, ../../scss/hovers.scss */
+.hover2.reverse .tooltip h1 {
+  top: 100%;
+}
+/* line 179, ../../scss/hovers.scss */
+.hover2.reverse .tooltip .hover_desc {
+  bottom: 100%;
+}
+/* line 186, ../../scss/hovers.scss */
+.hover2.reverse:hover .tooltip h1 {
+  top: 20px;
+}
+/* line 190, ../../scss/hovers.scss */
+.hover2.reverse:hover .tooltip .hover_desc {
+  bottom: 0%;
+}
+/* line 197, ../../scss/hovers.scss */
+.hover2 .tooltip {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(215, 148, 44, 0.7);
+  opacity: 0;
+}
+/* line 208, ../../scss/hovers.scss */
+.hover2 .tooltip h1 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 15px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  top: -50px;
+  width: 100%;
+}
+/* line 221, ../../scss/hovers.scss */
+.hover2 .tooltip .readmore {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+/* line 227, ../../scss/hovers.scss */
+.hover2 .tooltip .readmore a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 44px;
+  background: #000;
+  text-decoration: none;
+  -moz-border-radius: 3px / 3px;
+  -webkit-border-radius: 3px 3px;
+  border-radius: 3px / 3px;
+  margin: auto;
+  display: inline-block;
+}
+/* line 240, ../../scss/hovers.scss */
+.hover2 .tooltip .hover_desc {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -100%;
+}
+/* line 249, ../../scss/hovers.scss */
+.hover2 .tooltip p {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
 }

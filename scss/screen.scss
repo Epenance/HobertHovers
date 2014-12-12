@@ -4,13 +4,10 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700,300,900|Open+Sans:400,700,800,300);
 
 $icons-sprite-dimensions: true;
 @import "icons/*.png";
 @include all-icons-sprites;
 
-
-
-@import "base";
-@import "hovers";
+body {background:tomato;}
+.icons {display:inline-block;}

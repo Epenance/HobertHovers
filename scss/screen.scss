@@ -9,5 +9,8 @@ $icons-sprite-dimensions: true;
 @import "icons/*.png";
 @include all-icons-sprites;
 
+@import "vars";
+@import "base";
+@import "hovers";
 body {background:tomato;}
 .icons {display:inline-block;}

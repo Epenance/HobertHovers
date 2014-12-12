@@ -1,0 +1,80 @@
+@import "vars";
+
+* {
+  @include borderbox;
+}
+
+body {
+  background:#323a45;
+  font-family:$font_main;
+
+  .topbar {
+    height:3px;
+    width:100%;
+    background:#14171b;
+  }
+
+  .site_wrapper {
+    width:960px;
+    height:auto;
+    min-height:500px;
+    margin:80px auto 0px;
+  }
+}
+
+.main_title {
+  h1 {
+    text-align:center;
+    color:#f4ce77;
+    font-size:32px;
+    font-weight:700;
+    font-family:$font_title;
+    text-transform:uppercase;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
+    margin-bottom:25px;
+  }
+
+  p {
+    text-align:center;
+    width:50%;
+    margin:auto;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
+    color:white;
+    font-family:$font_second;
+  }
+
+  .download {
+    margin-top:30px;
+    text-align:center;
+    .btn {
+      text-transform:uppercase;
+      color:#14171b;
+      font-size:14px;
+      padding:15px 44px;
+      background:#e7c370;
+      text-decoration:none;
+      @include border-radius(3px, 3px);
+      @include box-shadow(0px 5px 0px 0px rgba(114,98,63,1));
+      margin:auto;
+      display:inline-block;
+      margin-bottom:15px;
+    }
+    .desc {
+      color:#e7c370;
+      font-size:12px;
+      font-weight:bold;
+      text-shadow:none;
+    }
+  }
+}
+
+.sep {
+  height:1px;
+  width:100%;
+  background:#14171b;
+  margin:40px auto;
+}
+
+.icons {display:inline-block;}
+
+.cf {clear:both;}

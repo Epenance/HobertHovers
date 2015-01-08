@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    //Setting up slim 
+    //Setting up slim
     slim: {
       dist: {
         options: {                       // Target options
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
           cwd: 'slim',
           src: ['{,*/}*.slim'],
           dest: 'www',
-          ext: '.html'
+          ext: '.php'
         }]
       }
     },

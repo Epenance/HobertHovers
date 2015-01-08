@@ -1,6 +1,7 @@
 @import "vars";
 
 .hover_wrapper {
+    text-align:center;
   h2 {
     text-align:center;
     color:#f4ce77;
@@ -9,33 +10,32 @@
     font-family:$font_main;
     text-transform:uppercase;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
-    margin-bottom:25px;
+    margin-bottom:20px;
+    margin-top:20px;
   }
 
-}
+  h3 {
+    color:#f4ce77;
+    font-size:18px;
+    font-weight:700;
+    font-family:$font_main;
+    text-transform:uppercase;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 1);
+    margin-bottom:10px;
+  }
 
-//Tooltip slides in from left to right
-
-@mixin hover-trans {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 //Slide in from sides
 .hover1 {
+  display:inline-block;
   @include hover-trans;
-  float:left;
-  margin-bottom:30px;
   width:465px;
   height:275px;
   position:relative;
   overflow:hidden;
+  margin:0px 5px 10px 5px;
 
-  &:nth-of-type(even) {
-    margin-left:30px;
-  }
 
   img {
     @include hover-trans;
@@ -138,16 +138,12 @@
 //Hover2 fade and slide
 .hover2 {
   @include hover-trans;
-  float:left;
-  margin-bottom:30px;
+  display:inline-block;
+  margin:0px 5px 10px 5px;
   width:465px;
   height:275px;
   position:relative;
   overflow:hidden;
-
-  &:nth-of-type(odd) {
-    margin-left:30px;
-  }
 
   img {
     @include hover-trans;
@@ -257,4 +253,288 @@
     }
   }
 
+}
+
+//Hover3
+
+.hover3 {
+  @include hover-trans;
+  display:inline-block;
+  margin:0px 5px 10px 5px;
+  width:465px;
+  height:275px;
+  position:relative;
+  overflow:hidden;
+
+  box-shadow: inset 0 0 0 16px rgba(255,255,255,0.4), 0 1px 2px rgba(0,0,0,0.1);
+
+  &.reverse {
+    .tooltip {
+      -webkit-transform: scale(3);
+      -moz-transform: scale(3);
+      -o-transform: scale(3);
+      -ms-transform: scale(3);
+      transform: scale(3);
+    }
+  }
+
+  .tooltip {
+    @include hover-trans;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(244, 206, 119, 0.6);
+    display:table;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-backface-visibility: hidden;
+    opacity:0;
+
+
+
+    .mid {
+      display: table-cell;
+      vertical-align: middle;
+
+      h3 {
+        color:white;
+        padding-bottom:15px;
+        border-bottom:1px solid #fff;
+        display:inline-block;
+      }
+
+      .author {
+        color:white;
+        text-shadow: 1px 1px 1px black;
+        font-style:italic;
+        margin-bottom:20px;
+      }
+
+      .readmore {
+        @include hover-trans;
+        color:white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+        margin-bottom:5px;
+        text-decoration:none;
+        text-transform:uppercase;
+        padding:5px;
+        background:rgba(255,255,255,0.3);
+        @include border-radius(3px, 3px);
+        border:1px solid rgba(255,255,255,0);
+
+        &:hover {
+          border:1px solid rgba(255,255,255,1);
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 5px rgba(255,255,255,0.4), 0 1px 2px rgba(0,0,0,0.1);
+    .tooltip {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+
+//Hover4
+
+.hover4 {
+  @include hover-trans;
+  display:inline-block;
+  margin:0px 5px 10px 5px;
+  width:465px;
+  height:275px;
+  position:relative;
+  overflow:hidden;
+
+  box-shadow: inset 0 0 0 16px rgba(255,255,255,0.4), inset 0 0 0 0px rgba(244, 206, 119, 0.6);
+
+  &:hover {
+    //Adjust second blur ratio if bigger image
+    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.4), inset 0 0 0 150px rgba(244, 206, 119, 0.6);
+
+    .tooltip {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .tooltip {
+    @include hover-trans;
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:table;
+
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+
+    .mid {
+      display: table-cell;
+      vertical-align: middle;
+
+      h3 {
+        color:white;
+        padding-bottom:15px;
+        border-bottom:1px solid #fff;
+        display:inline-block;
+      }
+
+      .author {
+        color:white;
+        text-shadow: 1px 1px 1px black;
+        font-style:italic;
+        margin-bottom:20px;
+      }
+
+      .readmore {
+        @include hover-trans;
+        color:white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+        margin-bottom:5px;
+        text-decoration:none;
+        text-transform:uppercase;
+        padding:5px;
+        background:rgba(255,255,255,0.3);
+        @include border-radius(3px, 3px);
+        border:1px solid rgba(255,255,255,0);
+
+        &:hover {
+          border:1px solid rgba(255,255,255,1);
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+  }
+}
+
+
+.hover5 {
+  @include hover-trans;
+  display:inline-block;
+  margin:0px 5px 10px 5px;
+  width:465px;
+  height:275px;
+  position:relative;
+  //overflow:hidden;
+
+  &.reverse {
+    .face {
+      z-index:2;
+    }
+    &:hover {
+      .face {
+        -webkit-transform: rotate(110deg);
+        -moz-transform: rotate(110deg);
+        -o-transform: rotate(110deg);
+        -ms-transform: rotate(110deg);
+        transform: rotate(110deg);
+      }
+    }
+
+  }
+
+  &:hover {
+    .face {
+      -webkit-transform: rotate(-110deg);
+      -moz-transform: rotate(-110deg);
+      -o-transform: rotate(-110deg);
+      -ms-transform: rotate(-110deg);
+      transform: rotate(-110deg);
+    }
+
+  }
+
+  .face {
+    @include hover-trans;
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:3;
+    box-shadow: inset 0 0 0 16px rgba(255,255,255,0.4);
+
+    -webkit-transform-origin: 98% 40%;
+    -moz-transform-origin: 98% 40%;
+    -o-transform-origin: 98% 40%;
+    -ms-transform-origin: 98% 40%;
+
+    &:after {
+      content: '';
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      border-radius: 50%;
+      top: 40%;
+      left: 98%;
+      margin: -4px 0 0 -4px;
+      background:rgba(0,0,0,0.5);
+    }
+  }
+
+  .tooltip {
+    z-index:1;
+    @include hover-trans;
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:table;
+    background:url(../img/upfeathers.png) repeat;
+    box-shadow:inset 0 0 0 150px rgba(244, 206, 119, 0.4);
+
+    .mid {
+      display: table-cell;
+      vertical-align: middle;
+
+      h3 {
+        color:white;
+        padding-bottom:15px;
+        border-bottom:1px solid #fff;
+        display:inline-block;
+      }
+
+      .author {
+        color:white;
+        text-shadow: 1px 1px 1px black;
+        font-style:italic;
+        margin-bottom:20px;
+      }
+
+      .readmore {
+        @include hover-trans;
+        color:white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+        margin-bottom:5px;
+        text-decoration:none;
+        text-transform:uppercase;
+        padding:5px;
+        background:rgba(255,255,255,0.3);
+        @include border-radius(3px, 3px);
+        border:1px solid rgba(255,255,255,0);
+
+        &:hover {
+          border:1px solid rgba(255,255,255,1);
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+      }
+    }
+  }
 }

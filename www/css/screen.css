@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700,300,900|Open+Sans:400,700,800,300);
-/* line 5, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -74,21 +74,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-repeat: no-repeat;
 }
 
-/* line 84, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-accept {
   background-position: 0 0;
   height: 16px;
   width: 16px;
 }
 
-/* line 84, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-close {
   background-position: 0 -16px;
   height: 16px;
   width: 16px;
 }
 
-/* line 84, ../../../../../../home/epenance/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../home/epenance/.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-plus {
   background-position: 0 -32px;
   height: 16px;
@@ -115,13 +115,25 @@ body .topbar {
 }
 /* line 17, ../../scss/base.scss */
 body .site_wrapper {
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   height: auto;
   min-height: 500px;
-  margin: 80px auto 0px;
+  margin: 80px auto 300px;
 }
 
 /* line 26, ../../scss/base.scss */
+.codeblock {
+  background: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  width: 100%;
+  border: solid gray;
+  border-width: 1px 1px 1px 1px;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+}
+
+/* line 36, ../../scss/base.scss */
 .main_title h1 {
   text-align: center;
   color: #f4ce77;
@@ -132,7 +144,7 @@ body .site_wrapper {
   text-shadow: 1px 2px 2px black;
   margin-bottom: 25px;
 }
-/* line 37, ../../scss/base.scss */
+/* line 47, ../../scss/base.scss */
 .main_title p {
   text-align: center;
   width: 50%;
@@ -141,12 +153,12 @@ body .site_wrapper {
   color: white;
   font-family: "Roboto", sans-serif;
 }
-/* line 46, ../../scss/base.scss */
+/* line 56, ../../scss/base.scss */
 .main_title .download {
   margin-top: 30px;
   text-align: center;
 }
-/* line 49, ../../scss/base.scss */
+/* line 59, ../../scss/base.scss */
 .main_title .download .btn {
   text-transform: uppercase;
   color: #14171b;
@@ -163,8 +175,19 @@ body .site_wrapper {
   margin: auto;
   display: inline-block;
   margin-bottom: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 62, ../../scss/base.scss */
+/* line 73, ../../scss/base.scss */
+.main_title .download .btn:hover {
+  background: #e7b645;
+  -moz-box-shadow: 0px 5px 0px 0px rgba(114, 98, 63, 0.4);
+  -webkit-box-shadow: 0px 5px 0px 0px rgba(114, 98, 63, 0.4);
+  box-shadow: 0px 5px 0px 0px rgba(114, 98, 63, 0.4);
+}
+/* line 78, ../../scss/base.scss */
 .main_title .download .desc {
   color: #e7c370;
   font-size: 12px;
@@ -172,7 +195,7 @@ body .site_wrapper {
   text-shadow: none;
 }
 
-/* line 71, ../../scss/base.scss */
+/* line 87, ../../scss/base.scss */
 .sep {
   height: 1px;
   width: 100%;
@@ -180,17 +203,21 @@ body .site_wrapper {
   margin: 40px auto;
 }
 
-/* line 78, ../../scss/base.scss */
+/* line 94, ../../scss/base.scss */
 .icons {
   display: inline-block;
 }
 
-/* line 80, ../../scss/base.scss */
+/* line 96, ../../scss/base.scss */
 .cf {
   clear: both;
 }
 
-/* line 4, ../../scss/hovers.scss */
+/* line 3, ../../scss/hovers.scss */
+.hover_wrapper {
+  text-align: center;
+}
+/* line 5, ../../scss/hovers.scss */
 .hover_wrapper h2 {
   text-align: center;
   color: #f4ce77;
@@ -199,25 +226,32 @@ body .site_wrapper {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   text-shadow: 1px 2px 2px black;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+/* line 17, ../../scss/hovers.scss */
+.hover_wrapper h3 {
+  color: #f4ce77;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 2px black;
+  margin-bottom: 10px;
 }
 
-/* line 27, ../../scss/hovers.scss */
+/* line 30, ../../scss/hovers.scss */
 .hover1 {
+  display: inline-block;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  float: left;
-  margin-bottom: 30px;
   width: 465px;
   height: 275px;
   position: relative;
   overflow: hidden;
-}
-/* line 36, ../../scss/hovers.scss */
-.hover1:nth-of-type(even) {
-  margin-left: 30px;
+  margin: 0px 5px 10px 5px;
 }
 /* line 40, ../../scss/hovers.scss */
 .hover1 img {
@@ -339,60 +373,56 @@ body .site_wrapper {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  float: left;
-  margin-bottom: 30px;
+  display: inline-block;
+  margin: 0px 5px 10px 5px;
   width: 465px;
   height: 275px;
   position: relative;
   overflow: hidden;
 }
 /* line 148, ../../scss/hovers.scss */
-.hover2:nth-of-type(odd) {
-  margin-left: 30px;
-}
-/* line 152, ../../scss/hovers.scss */
 .hover2 img {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 158, ../../scss/hovers.scss */
+/* line 154, ../../scss/hovers.scss */
 .hover2:hover img {
   -moz-transform: scale(1.1, 1.1);
   -ms-transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
 }
-/* line 162, ../../scss/hovers.scss */
+/* line 158, ../../scss/hovers.scss */
 .hover2:hover .tooltip {
   opacity: 1;
 }
-/* line 165, ../../scss/hovers.scss */
+/* line 161, ../../scss/hovers.scss */
 .hover2:hover .tooltip h1 {
   top: 20px;
 }
-/* line 169, ../../scss/hovers.scss */
+/* line 165, ../../scss/hovers.scss */
 .hover2:hover .tooltip .hover_desc {
   bottom: 0%;
 }
-/* line 177, ../../scss/hovers.scss */
+/* line 173, ../../scss/hovers.scss */
 .hover2.reverse .tooltip h1 {
   top: 100%;
 }
-/* line 179, ../../scss/hovers.scss */
+/* line 175, ../../scss/hovers.scss */
 .hover2.reverse .tooltip .hover_desc {
   bottom: 100%;
 }
-/* line 186, ../../scss/hovers.scss */
+/* line 182, ../../scss/hovers.scss */
 .hover2.reverse:hover .tooltip h1 {
   top: 20px;
 }
-/* line 190, ../../scss/hovers.scss */
+/* line 186, ../../scss/hovers.scss */
 .hover2.reverse:hover .tooltip .hover_desc {
   bottom: 0%;
 }
-/* line 197, ../../scss/hovers.scss */
+/* line 193, ../../scss/hovers.scss */
 .hover2 .tooltip {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -406,7 +436,7 @@ body .site_wrapper {
   background: rgba(215, 148, 44, 0.7);
   opacity: 0;
 }
-/* line 208, ../../scss/hovers.scss */
+/* line 204, ../../scss/hovers.scss */
 .hover2 .tooltip h1 {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -422,14 +452,14 @@ body .site_wrapper {
   top: -50px;
   width: 100%;
 }
-/* line 221, ../../scss/hovers.scss */
+/* line 217, ../../scss/hovers.scss */
 .hover2 .tooltip .readmore {
   position: absolute;
   bottom: 40px;
   width: 100%;
   text-align: center;
 }
-/* line 227, ../../scss/hovers.scss */
+/* line 223, ../../scss/hovers.scss */
 .hover2 .tooltip .readmore a {
   text-transform: uppercase;
   color: #fff;
@@ -443,7 +473,7 @@ body .site_wrapper {
   margin: auto;
   display: inline-block;
 }
-/* line 240, ../../scss/hovers.scss */
+/* line 236, ../../scss/hovers.scss */
 .hover2 .tooltip .hover_desc {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -455,7 +485,7 @@ body .site_wrapper {
   position: absolute;
   bottom: -100%;
 }
-/* line 249, ../../scss/hovers.scss */
+/* line 245, ../../scss/hovers.scss */
 .hover2 .tooltip p {
   width: 100%;
   padding: 40px;
@@ -463,4 +493,305 @@ body .site_wrapper {
   color: #fff;
   display: table-cell;
   vertical-align: middle;
+}
+
+/* line 260, ../../scss/hovers.scss */
+.hover3 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin: 0px 5px 10px 5px;
+  width: 465px;
+  height: 275px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 272, ../../scss/hovers.scss */
+.hover3.reverse .tooltip {
+  -webkit-transform: scale(3);
+  -moz-transform: scale(3);
+  -o-transform: scale(3);
+  -ms-transform: scale(3);
+  transform: scale(3);
+}
+/* line 281, ../../scss/hovers.scss */
+.hover3 .tooltip {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(244, 206, 119, 0.6);
+  display: table;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-backface-visibility: hidden;
+  opacity: 0;
+}
+/* line 298, ../../scss/hovers.scss */
+.hover3 .tooltip .mid {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 302, ../../scss/hovers.scss */
+.hover3 .tooltip .mid h3 {
+  color: white;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+}
+/* line 309, ../../scss/hovers.scss */
+.hover3 .tooltip .mid .author {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+/* line 316, ../../scss/hovers.scss */
+.hover3 .tooltip .mid .readmore {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  -moz-border-radius: 3px / 3px;
+  -webkit-border-radius: 3px 3px;
+  border-radius: 3px / 3px;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+/* line 328, ../../scss/hovers.scss */
+.hover3 .tooltip .mid .readmore:hover {
+  border: 1px solid white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+/* line 336, ../../scss/hovers.scss */
+.hover3:hover {
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+/* line 338, ../../scss/hovers.scss */
+.hover3:hover .tooltip {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* line 352, ../../scss/hovers.scss */
+.hover4 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin: 0px 5px 10px 5px;
+  width: 465px;
+  height: 275px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.4), inset 0 0 0 0px rgba(244, 206, 119, 0.6);
+}
+/* line 363, ../../scss/hovers.scss */
+.hover4:hover {
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.4), inset 0 0 0 150px rgba(244, 206, 119, 0.6);
+}
+/* line 367, ../../scss/hovers.scss */
+.hover4:hover .tooltip {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+/* line 377, ../../scss/hovers.scss */
+.hover4 .tooltip {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: table;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+}
+/* line 391, ../../scss/hovers.scss */
+.hover4 .tooltip .mid {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 395, ../../scss/hovers.scss */
+.hover4 .tooltip .mid h3 {
+  color: white;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+}
+/* line 402, ../../scss/hovers.scss */
+.hover4 .tooltip .mid .author {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+/* line 409, ../../scss/hovers.scss */
+.hover4 .tooltip .mid .readmore {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  -moz-border-radius: 3px / 3px;
+  -webkit-border-radius: 3px 3px;
+  border-radius: 3px / 3px;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+/* line 421, ../../scss/hovers.scss */
+.hover4 .tooltip .mid .readmore:hover {
+  border: 1px solid white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* line 431, ../../scss/hovers.scss */
+.hover5 {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  margin: 0px 5px 10px 5px;
+  width: 465px;
+  height: 275px;
+  position: relative;
+}
+/* line 441, ../../scss/hovers.scss */
+.hover5.reverse .face {
+  z-index: 2;
+}
+/* line 445, ../../scss/hovers.scss */
+.hover5.reverse:hover .face {
+  -webkit-transform: rotate(110deg);
+  -moz-transform: rotate(110deg);
+  -o-transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  transform: rotate(110deg);
+}
+/* line 457, ../../scss/hovers.scss */
+.hover5:hover .face {
+  -webkit-transform: rotate(-110deg);
+  -moz-transform: rotate(-110deg);
+  -o-transform: rotate(-110deg);
+  -ms-transform: rotate(-110deg);
+  transform: rotate(-110deg);
+}
+/* line 467, ../../scss/hovers.scss */
+.hover5 .face {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.4);
+  -webkit-transform-origin: 98% 40%;
+  -moz-transform-origin: 98% 40%;
+  -o-transform-origin: 98% 40%;
+  -ms-transform-origin: 98% 40%;
+}
+/* line 480, ../../scss/hovers.scss */
+.hover5 .face:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border-radius: 50%;
+  top: 40%;
+  left: 98%;
+  margin: -4px 0 0 -4px;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 493, ../../scss/hovers.scss */
+.hover5 .tooltip {
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background: url(../img/upfeathers.png) repeat;
+  box-shadow: inset 0 0 0 150px rgba(244, 206, 119, 0.4);
+}
+/* line 503, ../../scss/hovers.scss */
+.hover5 .tooltip .mid {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 507, ../../scss/hovers.scss */
+.hover5 .tooltip .mid h3 {
+  color: white;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+}
+/* line 514, ../../scss/hovers.scss */
+.hover5 .tooltip .mid .author {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+/* line 521, ../../scss/hovers.scss */
+.hover5 .tooltip .mid .readmore {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  -moz-border-radius: 3px / 3px;
+  -webkit-border-radius: 3px 3px;
+  border-radius: 3px / 3px;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+/* line 533, ../../scss/hovers.scss */
+.hover5 .tooltip .mid .readmore:hover {
+  border: 1px solid white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
